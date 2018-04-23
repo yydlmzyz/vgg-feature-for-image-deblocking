@@ -27,8 +27,9 @@ ARCNN+vgg|30.0260|0.8543|0.00110
 &emsp;&emsp; 
   
  依次为label input resnet resnet+vgg：  
-![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/blob/master/images/label.PNG)  
+![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/blob/master/images/laebl.PNG)  
 ![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/blob/master/images/input.PNG)  
+  
 ![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/blob/master/images/resnet.PNG)  
 ![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/blob/master/images/resnet+vgg.PNG)  
 
