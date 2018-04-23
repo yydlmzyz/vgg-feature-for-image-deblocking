@@ -10,13 +10,13 @@
 &emsp;&emsp;2.训练：batchsize:64 epoch:1000 optimizer:Adam(lr=0.0001)
 
 ### 4.Experiment Result
-训练模型 | PSNR|SSIM
----|---|---|
+训练模型 | PSNR|SSIM|train loss
+---|---|---|---|
 input(qp=40) | 29.5838|0.8448|
-pretrained model | 26.8431(+1.23)|0.7793(+0.040)
-only feature loss*5 |25.7689(+0.16)|0.7304(-0.001)
-only pixel loss*1|26.8752(+1.26)|0.7815(+0.042)
-both pixel loss*1+ feature loss*5|26.5002(+0.9437)|0.7726(+0.033)
+resnet |30.0922|0.8556|0.00110
+resnet+vgg |29.5986|0.8483|0.000977
+ARCNN|30.0818|0.8552|0.00110
+ARCNN+vgg|30.0260|0.8543|0.00110
 
 
 
@@ -26,8 +26,12 @@ both pixel loss*1+ feature loss*5|26.5002(+0.9437)|0.7726(+0.033)
 &emsp;&emsp; 3.一个明显的问题是模型训练的mselo ss表现好，但验证和测试时loss表现差,这个也一直未找到原因。
 &emsp;&emsp; 
   
-  左图为用feature loss,右图为没有feature loss：  
-![image](https://github.com/yydlmzyz/Feature-losses-for-image-deblocking/blob/master/images/compare.JPG)  
-![image](https://github.com/yydlmzyz/Feature-losses-for-image-deblocking/blob/master/images/compare2.jpg)  
-kua
+ 依次为label input resnet resnet+vgg：  
+![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/images/label.png)  
+![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/images/input.png)  
+![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/images/resnet.png)  
+![image](https://github.com/yydlmzyz/vgg-feature-for-image-deblocking/images/resnet+vgg.png)  
+
+
+
 
